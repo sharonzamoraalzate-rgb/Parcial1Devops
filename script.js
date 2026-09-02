@@ -10,3 +10,10 @@ document.getElementById("btnColor").addEventListener("click", function () {
   const colorRandom = colores[Math.floor(Math.random() * colores.length)];
   document.body.style.backgroundColor = colorRandom;
 });
+// Tu función nueva: cambiar el color del texto de los nombres
+const coloresTexto = ["#e63946", "#2a9d8f", "#f4a261", "#1d3557", "#6a0572"];
+
+document.getElementById("btnColorTexto").addEventListener("click", function () {
+  const colorTextoRandom = coloresTexto[Math.floor(Math.random() * coloresTexto.length)];
+  document.getElementById("nombres").style.color = colorTextoRandom;
+});
